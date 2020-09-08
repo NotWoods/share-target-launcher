@@ -1,7 +1,10 @@
 {
   "name": "share-target-launcher",
+  "private": true,
   "version": "0.0.0",
+  "author": "Tiger Oakes <contact@tigeroakes.com> (https://tigeroakes.com)",
   "scripts": {
+    "format": "prettier \"src/**/*.{ts,tsx,css}\" \"*.html\" \"vite.config.js\" --write",
     "dev": "vite",
     "build": "tsc && vite build"
   },
@@ -10,7 +13,20 @@
   },
   "devDependencies": {
     "@prefresh/vite": "^1.0.2",
+    "prettier": "^2.1.1",
     "typescript": "^4.0.2",
     "vite": "^1.0.0-rc.4"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "proseWrap": "always",
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "printWidth": 120
+        }
+      }
+    ]
   }
 }

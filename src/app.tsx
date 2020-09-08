@@ -1,5 +1,5 @@
-import { h, Fragment } from 'preact'
-import { Logo } from './logo'
+import { h, Fragment } from 'preact';
+import { Logo } from './logo';
 
 export function App() {
   return (
@@ -17,5 +17,5 @@ export function App() {
         </a>
       </p>
     </>
-  )
+  );
 }
