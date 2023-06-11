@@ -1,8 +1,17 @@
 <script lang="ts">
-    export let label: string;
+	export let label: string;
 </script>
 
-<label>
-    <span>{label}</span>
-    <slot />
+<label class="field">
+	<span class="field__label">{label}</span>
+	<slot />
 </label>
+
+<style>
+	.field {
+		display: grid;
+	}
+
+	.field__label {
+	}
+</style>
