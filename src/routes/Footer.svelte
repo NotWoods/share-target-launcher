@@ -58,7 +58,9 @@
 		display: block;
 		margin: auto;
 	}
-	:global(.dark) .self-logo {
-		filter: invert(1);
+	@media (prefers-color-scheme: dark) {
+		.self-logo {
+			filter: invert(1);
+		}
 	}
 </style>

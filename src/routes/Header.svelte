@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <header class="navbar">
 	<a href="/">
 		<h1 class="title">Web Share Target Tester</h1>
